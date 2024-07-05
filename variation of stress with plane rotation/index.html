@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>variation of stress with rotation of the plane</title>
+  <link rel="stylesheet" href="main.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/two.js/0.7.0/two.js"></script>
+</head>
+<body>
+    <div class="container">
+            <div class="myCanvas" id="canvas_1">
+              <h3></h3>
+              <div class="inputs">
+                <label for="P">P(in N)
+                <input type="number" name="" id="P" class="inputbtn" min="1" value="1">
+              </label>
+              <label for="A">A(in mm<sup>2</sup>)
+                <input type="number" name="" id="A"class="inputbtn" min="1" value="1" spaceholder="in N">
+              </label>
+              </div>
+              <input type="range" name="theta" id="theta" min="0" max="90" value="0" step="1">
+
+            </div>
+        </div>
+    </div>
+  
+  <script type="module" src="main.js"></script>
+</body>
+</html>

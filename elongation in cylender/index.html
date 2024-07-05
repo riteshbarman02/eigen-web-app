@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>elonggation</title>
+    <link rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/two.js/0.7.0/two.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="myCanvas" id="canvas_1"></div>
+      <div class="inputbtn">
+        <div class="btns">
+          <label for="pressureInput">P:
+          <input type="number" id="pressureInput" name="pressureInput"><br>
+          </label>
+          <label for="epsilonInput">ε:
+          <input type="number" id="epsilonInput" name="epsilonInput"><br>
+          </label>
+          <label for="sigmaInput">σ:
+          <input type="number" id="sigmaInput" name="sigmaInput"><br>
+          </label>
+        </div>
+      </div>
+      <div class="inputsldr">
+        <div class="sliders">
+          <label for="forceRange">F:</label>
+          <input
+            type="range"
+            id="forceRange"
+            name="forceRange"
+            min="0"
+            max="100"
+          /><br />
+
+          <label for="elasticityRange">E:</label>
+          <input
+            type="range"
+            id="elasticityRange"
+            name="elasticityRange"
+            min="0"
+            max="100"
+          /><br />
+
+          <label for="areaRange">A:</label>
+          <input
+            type="range"
+            id="areaRange"
+            name="areaRange"
+            min="0"
+            max="100"
+          /><br />
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

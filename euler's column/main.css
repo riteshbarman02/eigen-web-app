@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+   /* Adjusted max-width for better responsiveness */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myCanvas {
+    height: 70vh;
+    width: 500px; /* Make the canvas responsive */
+    border-radius: 8px;
+    border: 5px solid #f4f4f4;
+    background-color: #f4f6ff;
+    border-width: 2px;
+    transition: 0.4s;
+    overflow: hidden;
+}
+/*#f4f6ff*/
+
+
+
+@media  (max-width: 600px) {
+    .container{
+     width: 100%;
+     margin-left: -15px;
+    }
+    .myCanvas{
+     width: 100%;
+    }
+
+ }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>temperature</title>
+  <link rel="stylesheet" href="main.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/two.js/0.7.0/two.js"></script>
+</head>
+<body>
+    <div class="container">
+            <div class="myCanvas" id="canvas_1">
+              <div class="container2">
+                <label for="alpha">1. α (in 10<sup>-6</sup>c) :-
+                <input type="number" name="alpha" id="alpha" class="inputno" value="1" min="0" max="10">
+              </label>
+                <label for="alpha">2. E  (in 10<sup>5</sup>c):-
+                <input type="number" name="E" id="E" class="inputno" value="1" min="0" max="10">
+              </label>
+              </div>
+              <div class="container3">
+                
+              </div>
+              <input type="range" name="mue" id="delt" min="0" max="50" value="0" step="1">
+              <input type="range" name="load" id="load" min="0" max="50" value="0" step="1">
+              
+
+            </div>
+        </div>
+    </div>
+  
+  <script type="module" src="main.js"></script>
+</body>
+</html>

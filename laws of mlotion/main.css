@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+   /* Adjusted max-width for better responsiveness */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    padding: 20px;
+    text-align: center;
+}
+
+.myCanvas {
+    height: 70vh;
+    width: 500px; /* Make the canvas responsive */
+    border-radius: 8px;
+    border: 5px solid #f4f4f4;
+    background-color: #f4f6ff;
+    border-width: 2px;
+    transition: 0.4s;
+    overflow: hidden;
+}
+/*#f4f6ff*/
+#mue {
+    position: absolute;
+    margin: 2%; /* Adjusted margin for better responsiveness */
+    top: 35.5vh;
+    height: 10px;
+    width: 90%; /* Adjusted width for better responsiveness */
+    max-width: 350px; /* Added max-width for better responsiveness */
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+button {
+    position: relative;
+    top: 4%; /* Adjusted top for better responsiveness */
+    left: 4%; /* Adjusted left for better responsiveness */
+    background-color: #fff;
+    border-radius: 10px;
+    width: 15%; /* Adjusted width for better responsiveness */
+    height: 35px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: grey;
+    box-shadow: 2px rgb(31, 31, 31);
+}
+
+hr {
+    position: relative;
+    top: 2%; /* Adjusted top for better responsiveness */
+    width: 100%;
+}
+
+.buttons {
+    width: 90%; /* Adjusted width for better responsiveness */
+    max-width: 400px; /* Added max-width for better responsiveness */
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 75%;
+    margin-left: 20px;
+}
+
+.hr2 {
+    position: relative;
+    top: 2%; /* Adjusted top for better responsiveness */
+    width: 100%;
+}
+#rangeInputId{
+    width: 224px;
+    margin: 30px;
+}
+
+@media  (max-width: 600px) {
+    .container{
+     width: 100%;
+     margin-left: -15px;
+    }
+    .myCanvas{
+     width: 100%;
+    }
+    h3{
+     text-align: center;
+    }
+    .buttons{
+     margin: 0;
+     display: flex;
+     justify-content: center;
+     margin-left: 30px;
+     top: 65;
+ }
+ }
